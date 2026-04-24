@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motionmade — Augstas kvalitātes saturs ar neierobežotu brīvību</title>
+  <meta name="description" content="Vizuālais saturs, kas izskatās kā no profesionālas fotosesijas — bez fotosesijas organizēšanas, bez liekas komunikācijas. Rīga, Latvia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SVG grain filter -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden;" aria-hidden="true">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="greyNoise"/>
+        <feBlend in="SourceGraphic" in2="greyNoise" mode="multiply"/>
+      </filter>
+    </defs>
+  </svg>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="site-nav" aria-label="Galvenā navigācija">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Motionmade</a>
+    <ul class="nav-links">
+      <li><a href="#pakalpojumi">Pakalpojumi</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="#atsauksmes">Atsauksmes</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#sazinaties" class="btn-primary">Sākt sadarbību</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="hero-grid">
+
+    <!-- Left column -->
+    <div class="hero-left">
+      <div class="hero-tag hero-animate">Rīga, Latvia</div>
+      <h1 class="hero-h1 hero-animate">
+        Augstas kvalitātes<br>
+        saturs ar<br>
+        <em>neierobežotu</em> brīvību
+      </h1>
+      <p class="hero-sub hero-animate">
+        Vizuālais saturs, kas izskatās kā no profesionālas fotosesijas — bez fotosesijas organizēšanas, bez liekas komunikācijas.
+      </p>
+      <div class="hero-ctas hero-animate">
+        <a href="#sazinaties" class="btn-primary">Saņemt piedāvājumu</a>
+        <a href="portfolio.html" class="btn-ghost">Apskatīt darbus</a>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="hero-images hero-animate">
+      <img src="images/home-2.png" alt="Lifestyle produkta saturs" class="hero-img-main">
+      <img src="images/home-1.png" alt="Studijas produkta saturs" class="hero-img-secondary">
+      <div class="hero-badge">
+        <span class="hero-badge-number">48h</span>
+        <span class="hero-badge-label">Piegādes laiks</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true">
+  <span class="section-divider-line"></span>
+  <span class="section-divider-mark">✦</span>
+  <span class="section-divider-line"></span>
+</div>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section id="pakalpojumi" class="services">
+
+  <div class="services-header reveal">
+    <div class="services-header-left">
+      <span class="label">Ko mēs darām</span>
+      <h2 class="section-h2">Viss, ko vajag<br><em>zīmolam</em></h2>
+    </div>
+    <div class="services-header-right">
+      <p>Mēs radām vizuālo saturu, kas strādā — produkta bildes mājaslapai, lifestyle kadri sociālajiem tīkliem un reklāmas video Meta un TikTok platformām. Viss vienā vietā, ātrā termiņā.</p>
+    </div>
+  </div>
+
+  <div class="services-grid reveal-group">
+
+    <div class="service-card reveal">
+      <div class="service-card-img">
+        <img src="images/home-3.png" alt="Studijas bildes">
+      </div>
+      <div class="service-card-body">
+        <span class="service-number">01</span>
+        <h3 class="service-name">Studijas Bildes</h3>
+        <p class="service-desc">Tīras, profesionālas produkta bildes. Ideālas mājaslapai un e-komercijas platformām.</p>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-card-img">
+        <img src="images/home-5.png" alt="Lifestyle bildes">
+      </div>
+      <div class="service-card-body">
+        <span class="service-number">02</span>
+        <h3 class="service-name">"Lifestyle" Bildes</h3>
+        <p class="service-desc">Produkts dzīvē — dabīgi, stāstu stāstoši kadri sociālajiem tīkliem.</p>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-card-img">
+        <video autoplay muted loop playsinline>
+          <source src="images/plukt/Plukt_video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="service-card-body">
+        <span class="service-number">03</span>
+        <h3 class="service-name">Video Rullītis</h3>
+        <p class="service-desc">Īsi, iesaistoši video Meta, TikTok un Instagram — gatavi publicēšanai.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO PREVIEW
+     ============================================================ -->
+<section class="portfolio-preview">
+
+  <div class="portfolio-preview-header reveal">
+    <span class="label">Mūsu darbi</span>
+    <h2 class="section-h2">Klientu <em>darbi</em></h2>
+  </div>
+
+  <div class="portfolio-preview-grid reveal-group">
+
+    <a href="portfolio.html#silmachy-cosmetics" class="portfolio-tile reveal">
+      <img src="images/home-7.png" alt="Silmachy Cosmetics">
+      <div class="portfolio-tile-overlay">
+        <div class="portfolio-tile-info">
+          <span class="portfolio-tile-name">Silmachy Cosmetics</span>
+          <span class="portfolio-tile-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="portfolio.html#plukt" class="portfolio-tile reveal">
+      <img src="images/home-9.png" alt="PLŪKT">
+      <div class="portfolio-tile-overlay">
+        <div class="portfolio-tile-info">
+          <span class="portfolio-tile-name">PLŪKT</span>
+          <span class="portfolio-tile-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="portfolio.html#spirulina-nord" class="portfolio-tile reveal">
+      <img src="images/home-8.png" alt="Spirulina Nord">
+      <div class="portfolio-tile-overlay">
+        <div class="portfolio-tile-info">
+          <span class="portfolio-tile-name">Spirulina Nord</span>
+          <span class="portfolio-tile-arrow">→</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="portfolio-preview-cta reveal">
+    <a href="portfolio.html" class="btn-ghost">Apskatīt visu portfolio →</a>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section id="atsauksmes" class="testimonials">
+
+  <div class="testimonials-header reveal">
+    <span class="label">Atsauksmes</span>
+    <h2 class="section-h2">Ko saka <em>klienti</em></h2>
+  </div>
+
+  <div class="testimonials-grid reveal-group">
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-deco" aria-hidden="true">"</div>
+      <p class="testimonial-quote">
+        "Oho, cik forši! Patiešām viss sanācis ļoti dabīgi, sajūtīgi un skaisti. Milzīgs paldies! Noteikti izmantosim savā saturā un arī pie produktu foto mājaslapā."
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">M</div>
+        <div>
+          <span class="author-name">Marta</span>
+          <span class="author-role">CEO, Silmachy Cosmetics</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-deco" aria-hidden="true">"</div>
+      <p class="testimonial-quote">
+        "Esam pārsteigtas par rezultātu! Patiešām ir no kā izvēlēties. Paldies par atsūtītajiem foto un paveikto darbu!"
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">M</div>
+        <div>
+          <span class="author-name">Māra</span>
+          <span class="author-role">CEO &amp; Co-founder, PLŪKT</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="sazinaties" class="contact">
+  <div class="contact-inner">
+
+    <!-- Left: heading + form -->
+    <div class="contact-left">
+      <div class="reveal">
+        <span class="label">Sāciet šodien</span>
+        <h2 class="section-h2">Gatavi <em>sākt?</em></h2>
+        <p class="contact-sub">Sazinieties ar mums — pastāstiet par savu produktu un mēs sagatavosim individuālu piedāvājumu.</p>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Vārds</label>
+            <input type="text" id="name" name="name" placeholder="Jūsu vārds" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="brand">Zīmols / Uzņēmums</label>
+            <input type="text" id="brand" name="brand" placeholder="Jūsu uzņēmuma nosaukums" autocomplete="organization">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-pasts</label>
+          <input type="email" id="email" name="email" placeholder="jūsu@epasts.lv" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ziņojums</label>
+          <textarea id="message" name="message" placeholder="Pastāstiet par savu produktu un ko vēlaties sasniegt..." rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="submit-btn">Sūtīt ziņu</button>
+        <p class="form-error" id="form-error" style="display:none;"></p>
+
+      </form>
+
+      <p class="form-success" id="form-success">
+        Paldies! Mēs sazināsimies ar jums drīzumā.
+      </p>
+    </div>
+
+    <!-- Right: contact info boxes -->
+    <div class="contact-right reveal">
+      <div class="contact-info-box">
+        <span class="contact-info-label">Rakstiet mums</span>
+        <a href="mailto:hello@motionmade.online" class="contact-info-value">hello@motionmade.online</a>
+      </div>
+      <div class="contact-info-box">
+        <span class="contact-info-label">Zvaniet mums</span>
+        <a href="tel:+37126868780" class="contact-info-value">+371 26868780</a>
+      </div>
+      <div class="contact-info-box">
+        <span class="contact-info-label">Atrašanās vieta</span>
+        <span class="contact-info-value">Rīga, Latvija</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-tagline">Augstas kvalitātes<br>saturs ar<br>neierobežotu brīvību</p>
+      </div>
+      <nav class="footer-nav">
+        <span class="footer-col-label">Lapas</span>
+        <a href="#pakalpojumi">Pakalpojumi</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#atsauksmes">Atsauksmes</a>
+        <a href="#sazinaties">Sākt sadarbību</a>
+      </nav>
+      <div class="footer-contact">
+        <span class="footer-col-label">Kontakti</span>
+        <a href="mailto:hello@motionmade.online">hello@motionmade.online</a>
+        <a href="tel:+37126868780">+371 26868780</a>
+        <span>Rīga, Latvija</span>
+      </div>
+    </div>
+
+    <div class="footer-wordmark">Motionmade</div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Motionmade</span>
+      <span>Rīga, Latvia</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

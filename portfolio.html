@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Motionmade</title>
+  <meta name="description" content="Vizuālais saturs, ko esam radījuši reāliem zīmoliem. Spirulina Nord, PLŪKT, Silmachy Cosmetics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SVG grain filter -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden;" aria-hidden="true">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="greyNoise"/>
+        <feBlend in="SourceGraphic" in2="greyNoise" mode="multiply"/>
+      </filter>
+    </defs>
+  </svg>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="site-nav" aria-label="Galvenā navigācija">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Motionmade</a>
+    <ul class="nav-links">
+      <li><a href="index.html#pakalpojumi">Pakalpojumi</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="index.html#atsauksmes">Atsauksmes</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html#sazinaties" class="btn-primary">Sākt sadarbību</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     PORTFOLIO HERO
+     ============================================================ -->
+<section class="portfolio-hero">
+  <div class="portfolio-hero-inner">
+    <span class="label hero-animate">Mūsu darbi</span>
+    <h1 class="page-h1 hero-animate">Portfolio</h1>
+    <p class="hero-desc hero-animate">Vizuālais saturs, ko esam radījuši reāliem zīmoliem.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CLIENT SECTIONS
+     ============================================================ -->
+<div class="clients">
+
+  <!-- ── CLIENT 01: SILMACHY COSMETICS ────────────────────── -->
+  <section id="silmachy-cosmetics" class="client-section">
+    <div class="client-inner">
+
+      <div class="client-header reveal">
+        <span class="client-index">01</span>
+        <h2 class="client-name">Silmachy Cosmetics</h2>
+      </div>
+      <p class="client-desc reveal">Vizuālais saturs kosmetikas zīmolam — produkta bildes un lifestyle kompozīcijas.</p>
+
+      <!-- 1:hero  2:accent  3-5:smalls  6:video -->
+      <div class="client-grid reveal-group">
+        <img src="images/silmachy_cosmetics/SC6500.png" alt="Silmachy Cosmetics" class="reveal">
+        <img src="images/silmachy_cosmetics/SC6501.png" alt="Silmachy Cosmetics" class="reveal">
+        <img src="images/silmachy_cosmetics/SC6504.png" alt="Silmachy Cosmetics" class="reveal">
+        <img src="images/silmachy_cosmetics/SC6503.png" alt="Silmachy Cosmetics" class="reveal">
+        <img src="images/silmachy_cosmetics/SC6502.png" alt="Silmachy Cosmetics" class="reveal">
+        <video class="reveal" autoplay muted loop playsinline>
+          <source src="images/silmachy_cosmetics/Silmachy_video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="inline-testimonial reveal">
+        <div class="testimonial-card">
+          <div class="testimonial-deco" aria-hidden="true">"</div>
+          <p class="testimonial-quote">
+            "Oho, cik forši! Patiešām viss sanācis ļoti dabīgi, sajūtīgi un skaisti. Milzīgs paldies! Noteikti izmantosim savā saturā un arī pie produktu foto mājaslapā."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">M</div>
+            <div>
+              <span class="author-name">Marta</span>
+              <span class="author-role">CEO, Silmachy Cosmetics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── CLIENT 02: PLŪKT ─────────────────────────────────── -->
+  <section id="plukt" class="client-section">
+    <div class="client-inner">
+
+      <div class="client-header reveal">
+        <span class="client-index">02</span>
+        <h2 class="client-name">PLŪKT</h2>
+      </div>
+      <p class="client-desc reveal">Studio un lifestyle bildes Latvijas tējas zīmolam PLŪKT.</p>
+
+      <!-- 1:hero  2:accent  3-5:smalls  6:video -->
+      <div class="client-grid reveal-group">
+        <img src="images/plukt/P6523.png" alt="PLŪKT" class="reveal" style="object-position: 50% 30%;">
+        <img src="images/plukt/P6522.png" alt="PLŪKT" class="reveal">
+        <img src="images/plukt/P6502.png" alt="PLŪKT" class="reveal">
+        <img src="images/plukt/P6503.png" alt="PLŪKT" class="reveal">
+        <img src="images/plukt/P6531.png" alt="PLŪKT" class="reveal">
+        <video class="reveal" autoplay muted loop playsinline>
+          <source src="images/plukt/Plukt_video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="inline-testimonial reveal">
+        <div class="testimonial-card">
+          <div class="testimonial-deco" aria-hidden="true">"</div>
+          <p class="testimonial-quote">
+            "Esam pārsteigtas par rezultātu! Patiešām ir no kā izvēlēties. Paldies par atsūtītajiem foto un paveikto darbu!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">M</div>
+            <div>
+              <span class="author-name">Māra</span>
+              <span class="author-role">CEO &amp; Co-founder, PLŪKT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── CLIENT 03: SPIRULINA NORD ────────────────────────── -->
+  <section id="spirulina-nord" class="client-section">
+    <div class="client-inner">
+
+      <div class="client-header reveal">
+        <span class="client-index">03</span>
+        <h2 class="client-name">Spirulina Nord</h2>
+      </div>
+      <p class="client-desc reveal">Produkta bildes un lifestyle saturs spirulīna uztura bagātinātāju zīmolam.</p>
+
+      <!-- 1:hero  2:accent  3-5:smalls  6:video -->
+      <div class="client-grid reveal-group">
+        <img src="images/spirulina_nord/SP6706.png" alt="Spirulina Nord" class="reveal" style="object-position: 50% 30%;">
+        <img src="images/spirulina_nord/SN6601.PNG" alt="Spirulina Nord" class="reveal">
+        <img src="images/spirulina_nord/SN6512.PNG" alt="Spirulina Nord" class="reveal">
+        <img src="images/spirulina_nord/SP6703.png" alt="Spirulina Nord" class="reveal">
+        <img src="images/spirulina_nord/SP6705.png" alt="Spirulina Nord" class="reveal">
+        <video class="reveal" autoplay muted loop playsinline>
+          <source src="images/spirulina_nord/Spirulina_video.mov" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- ============================================================
+     CLOSING CTA
+     ============================================================ -->
+<section class="portfolio-cta">
+  <div class="portfolio-cta-inner reveal">
+    <span class="label">Sāciet šodien</span>
+    <h2 class="section-h2">Interesē <em>sadarbība?</em></h2>
+    <br>
+    <a href="index.html#sazinaties" class="btn-primary">Sākt sadarbību</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-tagline">Augstas kvalitātes<br>saturs ar<br>neierobežotu brīvību</p>
+      </div>
+      <nav class="footer-nav">
+        <span class="footer-col-label">Lapas</span>
+        <a href="index.html#pakalpojumi">Pakalpojumi</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="index.html#atsauksmes">Atsauksmes</a>
+        <a href="index.html#sazinaties">Sākt sadarbību</a>
+      </nav>
+      <div class="footer-contact">
+        <span class="footer-col-label">Kontakti</span>
+        <a href="mailto:hello@motionmade.online">hello@motionmade.online</a>
+        <a href="tel:+37126868780">+371 26868780</a>
+        <span>Rīga, Latvija</span>
+      </div>
+    </div>
+
+    <div class="footer-wordmark">Motionmade</div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Motionmade</span>
+      <span>Rīga, Latvia</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
