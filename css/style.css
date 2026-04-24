@@ -696,12 +696,16 @@ body::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
+  align-items: stretch;
 }
 .testimonial-card {
   background: #26221E;
   padding: 3rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .testimonial-deco {
   position: absolute;
@@ -722,7 +726,7 @@ body::before {
   font-weight: 300;
   line-height: 1.6;
   color: var(--cream);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   position: relative;
   z-index: 1;
 }
@@ -730,20 +734,17 @@ body::before {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: auto;
 }
 .author-avatar {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: var(--warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: var(--white);
+  display: block;
   flex-shrink: 0;
+  object-fit: cover;
+  object-position: center top;
 }
 .author-name {
   display: block;
@@ -1049,12 +1050,44 @@ body::before {
   .nav-cta .btn-primary { padding: 0.55rem 1rem; font-size: 0.72rem; }
 
   /* Hero */
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+  .hero {
+    align-items: stretch;
+    padding-top: var(--nav-h);
+    min-height: 100vh;
   }
-  .hero-badge { display: none; }
-  .hero-img-secondary { width: 40%; }
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+    gap: 0;
+    padding: 2.5rem 1.5rem 0;
+    height: calc(100vh - var(--nav-h));
+  }
+  .hero-left {
+    flex: 0 0 auto;
+    padding-bottom: 2rem;
+  }
+  .hero-images {
+    flex: 1;
+    min-height: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+  .hero-img-main {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    aspect-ratio: unset;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  .hero-img-secondary {
+    width: 38%;
+  }
+  .hero-badge {
+    right: 0;
+    top: 50%;
+  }
 
   /* Services */
   .services-header {
@@ -1104,8 +1137,6 @@ body::before {
 }
 
 @media (max-width: 600px) {
-  .hero-h1 { font-size: clamp(40px, 10vw, 56px); }
-  .hero-images { padding-bottom: 0; }
-  .hero-img-secondary { display: none; }
+  .hero-h1 { font-size: clamp(36px, 9vw, 52px); }
   .testimonial-card { padding: 2rem; }
 }
