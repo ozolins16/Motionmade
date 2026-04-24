@@ -44,7 +44,7 @@ const RESEND_API_KEY = 'YOUR_RESEND_API_KEY';
       },
       body: JSON.stringify({
         from: 'onboarding@resend.dev',
-        to:   'hello@motionmade.online',
+        to:   'info@motionmade.online',
         subject: subject,
         html: html
       })
@@ -60,7 +60,7 @@ const RESEND_API_KEY = 'YOUR_RESEND_API_KEY';
       }
     })
     .catch(function (err) {
-      showError('Neizdevās nosūtīt ziņu. Lūdzu, mēģiniet vēlreiz vai rakstiet uz hello@motionmade.online');
+      showError('Neizdevās nosūtīt ziņu. Lūdzu, mēģiniet vēlreiz vai rakstiet uz info@motionmade.online');
       setLoading(false);
     });
   });
