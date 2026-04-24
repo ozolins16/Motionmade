@@ -9,6 +9,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 120 + i * 110);
   });
 
+  // ── Burger menu ───────────────────────────────────────────
+  var burger = document.querySelector('.nav-burger');
+  var mobileMenu = document.querySelector('.nav-mobile-menu');
+  if (burger && mobileMenu) {
+    burger.addEventListener('click', function () {
+      var open = mobileMenu.classList.toggle('is-open');
+      burger.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
   // ── Ticker infinite clone ──────────────────────────────────
   var track = document.querySelector('.ticker-track');
   if (track) {
